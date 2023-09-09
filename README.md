@@ -1,6 +1,7 @@
 # JavaScript Calculator
 
-![Screen Shot 2023-09-09 at 3 55 01 PM](https://github.com/jordanmichb/Calculator/assets/95947696/58b329ff-0a74-43f5-a830-a6d669354303)
+![Screen Shot 2023-09-09 at 3 58 26 PM](https://github.com/jordanmichb/Calculator/assets/95947696/65464952-7444-4ce9-b281-fddbdc5163d0)
+
 
 # Getting Started with Create React App
 
