@@ -12,7 +12,8 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-or try it out here: https://codepen.io/jordanmichb/pen/rNoOeRq
+
+Or try it out here: https://codepen.io/jordanmichb/pen/rNoOeRq
 
 # Getting Started with Create React App
 
