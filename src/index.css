@@ -1,13 +1,102 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --equals-button-color: #066AA6;
+    --clear-all-color: #B02F30;
+    --clear-entry-color: #B55000;
+    --number-button-color: #e9ecef;
+    --operator-button-color: #6c757d;
+    --calculator-border-color: black;
+    --hover-button-color: #FBC02D;
+}
+  
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: "Roboto", "Courier", monospace;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#calculator {
+width: 350px;
+border: 2px solid var(--calculator-border-color);
+padding: 5px;
+background-color: black;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: auto;
+gap: 1px;
+}
+
+#display {
+grid-column: 1 / -1;
+margin-bottom: 10px;
+background-color: black;
+color: white;
+word-break: break-all;
+letter-spacing: .1rem;
+}
+
+#answer, #formula {
+overflow: scroll;
+}
+
+#answer{
+font-size: 1.1rem;
+padding: 5px 10px;
+text-align: right;
+color: #FBC02D;
+min-height: 32px;
+}
+
+#formula {
+padding: 0 10px;
+font-size: 1.4rem;
+text-align: right;
+max-height: 70px;
+text-overflow: ellipsis;
+}
+
+.button { 
+text-align: center;
+padding: 15px;
+background-color: var(--number-button-color);
+border: none;
+font-size: 1.2rem;
+}
+
+.button:hover {
+outline: 1px solid var(--hover-button-color);
+cursor: pointer;
+}
+
+.button.double {
+grid-column: span 2;
+}
+
+.button.operator {
+background-color: var(--operator-button-color);
+font-family: "Roboto", "Courier New", monospace;
+}
+
+#clear-all, #clear-entry {
+font-size: 1rem;
+}
+
+#clear-all {
+background-color: var(--clear-all-color);
+}
+
+#clear-entry {
+background-color: var(--clear-entry-color);
+}
+
+#equals {
+background-color: var(--equals-button-color);
 }
